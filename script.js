@@ -27,6 +27,7 @@ sumOne(10, 50, 6, 7, 88, 11, 6, 3, 9)
 
 // -3
 
+
 // -4 
 
 
@@ -49,6 +50,11 @@ console.log(resultTwo);
 console.log(resultThree);
 
 // -6 
+
+let arraySix = [1, 2, 3, 4, 5];
+
+for (let i = arraySix.length - 1; i >= 0; arraySix--);
+console.log(arraySix[i]);
 
 
 // -7 
