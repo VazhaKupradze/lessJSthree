@@ -26,9 +26,39 @@ sumOne(10, 50, 6, 7, 88, 11, 6, 3, 9)
 
 
 // -3
+let user = {
+    firstname: "giorgi",
+    lastname: "saakadze",
+    age: 32,
+    isloggedin: true,
+};
+
+function userInfo(obj) {
+    if (obj.isloggedin) {
+        return obj.firstname + " " + obj.lastname;
+        // return `${obj.firstname} ${obj.lastname}`;
+    }
+    return false;
+}
+
+let resultOne = userInfo(user);
+console.log(resultOne);
 
 
 // -4 
+
+function getMaxValue(...numbers) {
+    let maxValue = 0;
+    for (let item of numbers) {
+        if (item > maxValue) {
+            maxValue = item;
+        }
+    }
+    return maxValue;
+}
+
+let resultMax = getMaxValue(100, 4, 25, 250, 13);
+console.log(resultMax);
 
 
 // -5 
